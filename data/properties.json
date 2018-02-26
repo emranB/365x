@@ -1,6 +1,6 @@
 [
 	{
-		"id": "0001",
+		"id": "10001",
 		"name": "Russell St Hideaway",
 		"neighbourhood": "North End Halifax",
 		"numberofbedrooms": "3",
@@ -8,7 +8,7 @@
 		"nearby":"Steps from the Hydrostone Market"
 	},
 	{
-		"id": "0002",
+		"id": "100002",
 		"name": "Centrally Located Hunter St with Office",
 		"neighbourhood": "North End Halifax",
 		"numberofbedrooms": "2",
@@ -16,7 +16,7 @@
 		"nearby":"The Halifax Commons and Quinpool Road"
 	},
 	{
-		"id": "0003",
+		"id": "100003",
 		"name": "Luxurious Centrally Located Belle Aire Terrace",
 		"neighbourhood": "North End Halifax",
 		"numberofbedrooms": "3",
@@ -24,7 +24,7 @@
 		"nearby":"Close to the Grocery Store and Food-Centric Agricola St"
 	},
 	{
-		"id": "0004",
+		"id": "100004",
 		"name": "Bright and Spacious High End 2 Bedroom",
 		"neighbourhood": "St Margaret's Bay",
 		"numberofbedrooms": "2",
@@ -32,7 +32,7 @@
 		"nearby":"Close to Penninsular Halifax, but with Added Privacy and Access to Green Spaces"
 	},
 	{
-		"id": "0005",
+		"id": "100005",
 		"name": "2 Bedroom in Heart of Downtown",
 		"neighbourhood": "North End",
 		"numberofbedrooms": "2",

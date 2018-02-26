@@ -254,21 +254,35 @@
  * Animations
  */
 .page-fade {
-  -webkit-transition: all .5s ease-in-out;
+  /* -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; */
   opacity: 1;
 }
 .page-fade.ng-enter {
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  -moz-transition: -moz-transform 0.5s ease-in;
+  -o-transition: -o-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
   opacity: 0;
 }
 .page-fade.ng-enter.ng-enter-active, .page-fade.ng-leave {
+  -webkit-transition: -webkit-transform 1.5s ease-in;
+  -moz-transition: -moz-transform 1.5s ease-in;
+  -o-transition: -o-transform 1.5s ease-in;
+  transition: transform 1.5s ease-in;
   opacity: 1;
 }
 .page-fade.ng-leave.ng-leave-active {
-  opacity: 1;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  -moz-transition: -moz-transform 0.5s ease-in;
+  -o-transition: -o-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  opacity: 0;
 }
+
+
 
 .page-slide-left {
   /* -webkit-transition: -webkit-transform 1s ease-in-out;
@@ -297,6 +311,41 @@
 .page-slide-left.ng-leave.ng-leave-active {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+.page-slide-right {
+  /* -webkit-transition: -webkit-transform 1s ease-in-out;
+  -moz-transition: -moz-transform 1s ease-in-out;
+  -o-transition: -o-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out; */
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.page-slide-right.ng-enter {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+.page-slide-right.ng-enter.ng-enter-active, .page-slide-right.ng-leave {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform 1.5s ease-in-out;
+    -moz-transition: -moz-transform 1.5s ease-in-out;
+    -o-transition: -o-transform 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out;
+}
+.page-slide-right.ng-leave.ng-leave-active {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     -moz-transition: -moz-transform 0.5s ease-in-out;
     -o-transition: -o-transform 0.5s ease-in-out;
