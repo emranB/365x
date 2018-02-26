@@ -1,0 +1,92 @@
+<div class="bottom-container container-fluid" ng-controller="homeBottomController">
+  <div class="row" style="padding: 0;">
+
+    <div class="col-1">
+      <button class="scrollBtn left pull-left" ng-click="scrollLeft()">
+        <i class="fa fa-caret-left"></i>
+      </button>
+    </div>
+
+    <div class="col-9">
+      <div class="tile-container">
+        <div class="carousel">
+          <div class="item" ng-repeat="property in properties">
+            <!-- {{ item.name }} -->
+            <!-- .................. Tile HTML Template .................. -->
+            <div class="tile">
+              <a ui-sref="property({id: {{property.id}} })" class="on-hover raleway">
+                <h2 class="title raleway">
+                  {{property.name}}
+                </h2>
+                <hr>
+                {{property.numberofbedrooms}} bedrooms
+                <br>
+                {{property.neighbourhood}}
+                <br>
+                {{property.nearby}}
+                <br>
+                {{property.amenities}}
+                <br><br>
+                <p class="follow-link raleway">
+                  <i class="fa fa-chevron-circle-right icon"></i>
+                  &nbsp
+                  Find out more . . .
+                </p>
+              </a>
+              <div class="photo">
+                <img src="http://lorempixel.com/400/200/sports/1/" alt="Some alt">
+              </div>
+              <div class="title raleway">
+                {{property.name}}
+              </div>
+            </div>
+            <!-- .......................................................... -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-1">
+      <button class="scrollBtn right pull-right" ng-click="scrollRight()">
+        <i class="fa fa-caret-right"></i>
+      </button>
+    </div>
+
+
+
+
+
+
+    <!-- .................. Tile HTML Template .................. -->
+    <!-- <div class="tile">
+      <a ui-sref="home" class="on-hover raleway">
+        <h2 class="title raleway">
+          {{property.name}}
+        </h2>
+        <hr>
+        {{property.numberofbedrooms}} bedrooms
+        <br>
+        {{property.neighbourhood}}
+        <br>
+        {{property.nearby}}
+        <br>
+        {{property.amenities}}
+        <br><br>
+        <p class="follow-link raleway">
+          <i class="fa fa-chevron-circle-right icon"></i>
+          &nbsp
+          Find out more . . .
+        </p>
+      </a>
+      <div class="photo">
+        <img src="http://lorempixel.com/400/200/sports/1/" alt="Some alt">
+      </div>
+      <div class="title raleway">
+        {{property.name}}
+      </div>
+    </div> -->
+    <!-- .......................................................... -->
+
+
+  </div>
+</div>

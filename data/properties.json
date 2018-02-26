@@ -1,0 +1,42 @@
+[
+	{
+		"id": "0001",
+		"name": "Russell St Hideaway",
+		"neighbourhood": "North End Halifax",
+		"numberofbedrooms": "3",
+		"amenities": "Laundry, Parking, Wifi, Backyard",
+		"nearby":"Steps from the Hydrostone Market"
+	},
+	{
+		"id": "0002",
+		"name": "Centrally Located Hunter St with Office",
+		"neighbourhood": "North End Halifax",
+		"numberofbedrooms": "2",
+		"amenities": "Laundry, Parking, Wifi, Dedicated Office Space",
+		"nearby":"The Halifax Commons and Quinpool Road"
+	},
+	{
+		"id": "0003",
+		"name": "Luxurious Centrally Located Belle Aire Terrace",
+		"neighbourhood": "North End Halifax",
+		"numberofbedrooms": "3",
+		"amenities": "Laundry, Wifi",
+		"nearby":"Close to the Grocery Store and Food-Centric Agricola St"
+	},
+	{
+		"id": "0004",
+		"name": "Bright and Spacious High End 2 Bedroom",
+		"neighbourhood": "St Margaret's Bay",
+		"numberofbedrooms": "2",
+		"amenities": "Laundry, Parking, Wifi, Deck",
+		"nearby":"Close to Penninsular Halifax, but with Added Privacy and Access to Green Spaces"
+	},
+	{
+		"id": "0005",
+		"name": "2 Bedroom in Heart of Downtown",
+		"neighbourhood": "North End",
+		"numberofbedrooms": "2",
+		"amenities": "Laundry, Wifi",
+		"nearby":"Walking Distance to Downtown Halifax and Popular Gottingen St"
+	}
+]

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>365x</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <base href="/">
+
+  <!-- jQuery -->
+  <script src="/static/node_modules/jquery/dist/jquery.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/static/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Angular -->
+  <script src="/static/node_modules/angular/angular.js"></script>
+  <script src="/static/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/static/bower_components/angular-animate/angular-animate.js"></script>
+
+  <!-- Bootstrap UI -->
+  <script src="/static/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="/static/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <link rel="stylesheet" href="/static/bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Controllers -->
+  <script src="/static/controllers/index.js"></script>
+  <script src="/static/controllers/home/homeTopController.js"></script>
+  <script src="/static/controllers/home/homeBottomController.js"></script>
+
+  <!-- Custom -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Orbitron|Permanent+Marker|Titillium+Web|Alike|Raleway|Ultra|Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/app.css">
+  <script src="/static/js/custom.js"></script>
+
+
+</head>
+<body>
+
+<div ng-app="app">
+
+  <div class="page-fade" ui-view="topSegment"></div>
+  <div class="page-slide-left" ui-view="bottomSegment"></div>
+
+</div>
+
+</body>
+</html>
