@@ -9,7 +9,6 @@ $scope.header = {};
 $scope.properties = [];
 $scope.property = {};
 var propertyId = '';
-
 if ($stateParams.id) {
   var propertyId = $stateParams.id;
 }
@@ -20,6 +19,9 @@ var getProperties = function () {
       $scope.properties = data.data;
     });
 };
+
+
+
 
 var getPropertyDetails = function (properties) {
   $scope.property = {};
@@ -34,6 +36,9 @@ var getPropertyDetails = function (properties) {
 
   return $scope.property;
 };
+
+
+
 
 var loadPage = function () {
   getProperties()

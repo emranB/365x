@@ -3,7 +3,33 @@
   margin: 0 auto;
 }
 
+body {
+  background-color: #e74c3c;
+  animation: bg-color 10s infinite;
+  -webkit-animation: bg-color 10s infinite;
+}
+@-webkit-keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
 
+@keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+p {
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro W3",sans-serif;
+  text-align: center;
+}
 /***************
  * Custom Colors
  */
@@ -46,7 +72,7 @@
   background: #f7b733;
   width: 100vw;
   height: 55vh;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   position: fixed;
 }
 
@@ -230,14 +256,13 @@
  * Home Page
  */
 .home-top .inner{
-  position: absolute;
   width: 50vw;
   margin-top: 10vh;
-  margin-left: 28vw;
+  text-align: center;
 }
 .home-top .inner h1{
   color: white;
-  font-size: 4.5em;
+  font-size: 3em;
 }
 .home-top .inner p{
   color: white;
@@ -245,7 +270,7 @@
   text-align: center;
 }
 .home-top .inner a{
-  margin-left: 15vw;
+  /* margin-left: 15vw; */
   text-decoration: none;
   color: white;
 }
