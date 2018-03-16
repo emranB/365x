@@ -1,0 +1,27 @@
+{
+  "name": "angular-carousel-3d",
+  "version": "0.4.0",
+  "authors": [
+    "Vladimir Bujanovic <bujanovic@gmail.com>"
+  ],
+  "description": "Angular Carousel 3d",
+  "main": [
+    "./dist/carousel-3d.css",
+    "./dist/carousel-3d.js"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.x",
+    "angular-mocks": "1.6.x",
+    "angular-sanitize": "1.6.x",
+    "angular-swipe": "0.2.x"
+  }
+}

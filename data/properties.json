@@ -1,19 +1,21 @@
 [
 	{
 		"id": "10001",
-		"name": "Russell St Hideaway",
+		"name": "Russell Street Hideaway",
 		"neighbourhood": "North End Halifax",
 		"numberofbedrooms": "3",
 		"amenities": "Laundry, Parking, Wifi, Backyard",
-		"nearby":"Steps from the Hydrostone Market"
+		"nearby":"Steps from the Hydrostone Market",
+		"img_directory": "RussellStreet"
 	},
 	{
 		"id": "100002",
-		"name": "Centrally Located Hunter St with Office",
+		"name": "Centrally Located Hunter Street with Office",
 		"neighbourhood": "North End Halifax",
 		"numberofbedrooms": "2",
 		"amenities": "Laundry, Parking, Wifi, Dedicated Office Space",
-		"nearby":"The Halifax Commons and Quinpool Road"
+		"nearby":"The Halifax Commons and Quinpool Road",
+		"img_directory": "HunterStreet"
 	},
 	{
 		"id": "100003",
@@ -21,7 +23,8 @@
 		"neighbourhood": "North End Halifax",
 		"numberofbedrooms": "3",
 		"amenities": "Laundry, Wifi",
-		"nearby":"Close to the Grocery Store and Food-Centric Agricola St"
+		"nearby":"Close to the Grocery Store and Food-Centric Agricola St",
+		"img_directory": "BelleAire"
 	},
 	{
 		"id": "100004",
@@ -29,7 +32,8 @@
 		"neighbourhood": "St Margaret's Bay",
 		"numberofbedrooms": "2",
 		"amenities": "Laundry, Parking, Wifi, Deck",
-		"nearby":"Close to Penninsular Halifax, but with Added Privacy and Access to Green Spaces"
+		"nearby":"Close to Penninsular Halifax, but with Added Privacy and Access to Green Spaces",
+		"img_directory": "SaintMargarets"
 	},
 	{
 		"id": "100005",
@@ -37,6 +41,7 @@
 		"neighbourhood": "North End",
 		"numberofbedrooms": "2",
 		"amenities": "Laundry, Wifi",
-		"nearby":"Walking Distance to Downtown Halifax and Popular Gottingen St"
+		"nearby":"Walking Distance to Downtown Halifax and Popular Gottingen St",
+		"img_directory": "Brunswick"
 	}
 ]

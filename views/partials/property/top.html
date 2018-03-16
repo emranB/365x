@@ -1,15 +1,42 @@
-<div class="top-container home-top container-fluid" ng-controller="homeTopController">
-  <div class="inner">
-    
-    <h1 class="raleway">{{header.title}}</h1>
-    <p class="raleway">{{header.description}}</p>
+<div class="top-container property-top container-fluid scrollme">
+  <div class="property-inner row animateme"
+       data-when="enter"
+       data-from="0.5"
+       data-to="0"
+       data-opacity="0"
+       data-translatex="-200"
+       data-rotatez="90">
 
-    <br><br><br>
+    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 property image">
+      <img src="/static/data/pics/{{currentProperty.img_directory}}/{{currentProperty.img_directory}}1.jpg" alt="Pic here">
+      <!-- <a ui-sref="home" class="ghost-btn-1 raleway">
+        <i class="fa fa-chevron-circle-right icon"></i>
+        &nbsp Explore
+      </a> -->
+    </div>
 
-    <a ui-sref="" class="ghost-btn-1 raleway">
-      <i class="fa fa-chevron-circle-right icon"></i>
-      &nbsp Explore
-    </a>
-    
+
+    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 property description">
+      <h1 class="raleway">{{header.title}}</h1>
+      <hr>
+      <p class="raleway">
+        <span class="map-icon map-icon-map-pin green"></span>
+        {{currentProperty.neighbourhood}}
+      </p>
+      <p class="raleway">
+        <span class="map-icon map-icon-lodging green"></span>
+        {{currentProperty.numberofbedrooms}} bedrooms
+      </p>
+      <p class="raleway">
+        <span class="map-icon map-icon-grocery-or-supermarket green"></span>
+        {{currentProperty.amenities}}
+      </p>
+      <p class="raleway">
+        <span class="map-icon map-icon-night-club green"></span>
+        Close to {{currentProperty.nearby}}
+      </p>
+    </div>
+
+
   </div>
 </div>

@@ -7,7 +7,7 @@ app.controller("homeTopController", function (
 
 $scope.header = {};
 $scope.properties = [];
-$scope.property = {};
+$scope.currentProperty = {};
 var propertyId = '';
 if ($stateParams.id) {
   var propertyId = $stateParams.id;
@@ -20,6 +20,31 @@ var getProperties = function () {
     });
 };
 
+
+var getCurrentProperty = function () {
+  var id = $stateParams.id;
+  return $http.get("/static/data/properties.json")
+    .then(function (data) {
+      var properties = data.data;
+      $scope.currentProperty =  properties.find(function (row) {
+        return row.id == id;
+      });
+
+      var params = {
+        id: $scope.currentProperty.id
+      };
+      return $http.get("/api/getImageFilePaths", {params})
+        .then(function (filePaths) {
+
+
+
+          console.log(filePaths);
+
+
+
+        });
+    });
+};
 
 
 
@@ -40,11 +65,12 @@ var getPropertyDetails = function (properties) {
 
 
 
-var loadPage = function () {
-  getProperties()
-    .then(getPropertyDetails);
-};
-loadPage();
+// var loadPage = function () {
+//   getProperties()
+//     .then(getPropertyDetails)
+//     .then(getCurrentProperty);
+// };
+// loadPage();
 
 });
 
